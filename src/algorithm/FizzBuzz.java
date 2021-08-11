@@ -11,6 +11,7 @@ public class FizzBuzz {
             if(!word.isEmpty()){
                 System.out.println(i+":"+word);
             }
+
         }
     }
 }
