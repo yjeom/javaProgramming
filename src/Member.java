@@ -13,6 +13,9 @@ public class Member {
         this.address=address;
 
     }
+    public Member(String email,String password,String name,String telephone) {
+        this(email,password,name,telephone,"모름");
+    }
 }
 class MemberTest{
     public static void main(String[]args){
