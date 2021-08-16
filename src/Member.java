@@ -22,6 +22,9 @@ public class Member {
             this.address=address;
             return this;
         }
+        public Member build(){
+            return new Member(this);
+        }
     }
     private Member(Builder builder){
         email=builder.email;
@@ -37,6 +40,6 @@ class MemberTest{
         Member.Builder builder=new Member.Builder(
                 "member1@test.com","1234","김아무개","010-1234-5678");
         builder.address("서울");
-
+        Member m=builder.build();
     }
 }
